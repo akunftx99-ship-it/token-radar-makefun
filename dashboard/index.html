@@ -3,12 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
 <title>Token Radar: pre-token protocols ranked by implied value</title>
+<meta name="description" content="A radar for protocols that have not issued a token yet: ranked by implied value from DefiLlama's own TVL, growth, age and reach, with the steps to farm each one.">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <a class="skip" href="#board">Skip to the board</a>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">◈</span>
+    <span class="wordmark">Token Radar</span>
+    <span class="tag" id="model-tag">radar-2</span>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <a href="#/" id="tab-radar">Radar</a>
+    <a href="#/live" id="tab-live">Live tokens</a>
+    <a href="#/model" id="tab-model">The model</a>
+  </nav>
+  <p class="asof" id="asof"></p>
+</header>
+<div class="stats" id="stats" aria-label="Snapshot summary"></div>
 <main id="board" tabindex="-1" aria-busy="true"></main>
+<footer class="foot">
+  <p>Source: DefiLlama's protocol list, frozen in this snapshot. An implied value is this radar's own arithmetic, never a price, an offer or advice.</p>
+</footer>
 <script src="../data.js"></script>
 <script src="app.js"></script>
 </body>
